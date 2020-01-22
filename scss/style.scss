@@ -1,0 +1,197 @@
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+    font-size: 10px;
+}
+body {
+    min-height: 100vh;
+    @include text($text-color, $text-font, 1.4rem, 400, 1.6)
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+    &--ai-fe {
+        align-items: flex-end;
+    }
+    &--revers {
+        flex-direction: row-reverse;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 15px 35px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $text-color;
+    background-color: $primary-color;
+    border: none;
+    display: block;
+    @include hover {
+        background-color: fade-out($primary-color, .3);
+    }
+}
+
+.main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    max-width: 600px;
+    width: 96%;
+}
+.items {
+    list-style: none;
+    margin: 0;
+    padding: 30px 50px 0;
+    background: $secondary-color;
+}
+.item {
+    width: 30%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    color: fade-out($text-color, .3) ;
+    fill:  fade-out($text-color, .3) ;
+    @include hover {
+        fill: $text-color;
+        color: $text-color;
+        border-color: $text-color
+    }
+    &__title {
+        margin: 10px 0 30px;
+        font-size: 1.6rem;
+    }
+}
+
+.tabs {
+    background: $gray-bg;
+}
+.tab {
+    padding: 55px 20px;
+}
+
+.cover {
+    width: 33%;
+    padding: 5px 20px;
+    
+    &__box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }    
+    
+    &__rating {
+        width: 100%;
+        text-align: center;
+    }
+    &__stars {
+        margin: 0 auto;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 0;
+        background: red;
+        
+        & li {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: center / contain no-repeat url(../img/star.png);
+            margin: -1px 0;
+        }
+    }
+}
+
+.content {
+    width: 67%;
+    padding: 5px 20px;
+    min-height: 285px;
+    flex-direction: column;
+
+
+    &__title {
+        font-size: 3.2rem;
+        margin: 0 0 15px;
+        overflow: hidden;
+        max-height: 4.4rem;
+        font-weight: normal;
+        &--bold {
+            font-weight: 700;
+        }
+        &--nm {
+            margin: 0;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.4rem;
+        overflow: hidden;
+        max-height: 4.7rem;
+    }
+    /*Работа с SVG start*/
+    &__rating {
+        position: relative;
+    }   
+    svg {
+        transform: rotate(270deg);
+        #linear-gradient { stroke: url(#gradient); }
+        #linear-gradient-r { stroke: url(#gradient-r); }
+        .stop1 { stop-color: #1ae37f; }
+        .stop2 { stop-color: #01d5bc; }
+    }
+    .shadow-circle {
+        stroke: $light-gray;
+    }
+    .stroke {
+        stroke-dashoffset: calc(440 - (4400 * 7.8 / 2) / 100); //Необходимо изменить 7,8 для получения рейтинга на старнице
+    }
+    &__rating-value {
+        font-size: 2rem;
+        color: $light-gray;
+        @include posCenter;
+    }
+    /*Работа с SVG end*/
+    &__description {
+        max-height: 30rem;
+        padding: 20px 0;
+        overflow: hidden;
+        & > p {
+            font-size: 1.4rem;
+            color: $light-gray;
+        }
+    }
+    &__sell {
+        color: $gold;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}

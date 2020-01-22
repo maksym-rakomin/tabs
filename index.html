@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <main class="main" style="background-image: url(img/background.jpg);">
+        <section class="game">
+            <ul class="items flex">
+                <li class="item active" data-tab="information">
+                    <svg width="20" height="20">
+                        <use xlink:href="#basket">
+                    </svg>
+                    <h3 class="item__title" >information</h3>
+                </li>
+                <li class="item" data-tab="rating">
+                    <svg width="19" height="21">
+                        <use xlink:href="#card"/>
+                    </svg>
+                    <h3 class="item__title">rating info</h3>
+                </li>
+                <li class="item"  data-tab="buy">
+                    <svg width="22" height="22">
+                        <use xlink:href="#tooltip">
+                    </svg>
+                    <h3 class="item__title">where to buy</h3>
+                </li>             
+            </ul>
+            <div class="tabs">
+                <div class="tab flex" id="information">
+                    <div class="cover">
+                        <div class="cover__box">
+                            <img src="img/cover.jpg" alt="FarCry 4" class="cover__img">
+                        </div>
+                        <div class="cover__rating">
+                            <ul class="cover__stars" style="background: linear-gradient(to right, #eaee08 0, #eaee08 56%, #fff 56%);">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content__head flex">
+                            <div class="content__header">
+                                <h3 class="content__title">FarCry 4</h3>
+                                <div class="content__subtitle">First Released Nov 17, 2014</div>
+                            </div>
+                            <div class="content__rating">
+                                <svg class="contant__rating-circle" width="76" height="76">
+                                    <defs>
+                                        <linearGradient id="gradient">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="shadow-circle" r="33" cx="38" cy="38" fill="none" stroke-width="2"></circle>                                      
+                                    <circle id="linear-gradient" class="stroke" r="35" cx="38" cy="38" fill="none" stroke-width="3" stroke-dasharray="440"></circle>
+                                </svg>
+                                <div class="content__rating-value">7.8</div>
+                            </div>
+                        </div>
+                        <div class="content__description">
+                            <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.</p>
+                        </div>
+                        <div class="content__buy flex flex--ai-fe">
+                            <div class="content__price">
+                                <div class="content__sell">20% off</div>
+                                <div class="content__title content__title--bold content__title--nm">$59.96</div>
+                            </div>
+                            <button class="btn">buy it now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="rating">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вопрос путь они буквенных обеспечивает по всей грустный над единственное, маленькая буквоград, текст коварных толку! Повстречался текст образ безорфографичный выйти наш.</div>
+                <div class="tab flex flex--revers" id="buy">
+                    <div class="cover">
+                        <div class="cover__box">
+                            <img src="img/cover.jpg" alt="FarCry 4" class="cover__img">
+                        </div>
+                        <div class="cover__rating">
+                            <ul class="cover__stars" style="background: linear-gradient(to right, #eaee08 0, #eaee08 56%, #fff 56%);">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content__head flex">
+                            <div class="content__header">
+                                <h3 class="content__title">FarCry 4</h3>
+                                <div class="content__subtitle">First Released Nov 17, 2014</div>
+                            </div>
+                            <div class="content__rating">
+                                <svg class="contant__rating-circle" width="76" height="76">
+                                    <defs>
+                                        <linearGradient id="gradient-r">
+                                            <stop class="stop1" offset="0%"/>
+                                            <stop class="stop2" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="shadow-circle" r="33" cx="38" cy="38" fill="none" stroke-width="2"></circle>                                      
+                                    <circle id="linear-gradient-r" class="stroke" r="35" cx="38" cy="38" fill="none" stroke-width="3" stroke-dasharray="440"></circle>
+                                </svg>
+                                <div class="content__rating-value">7.8</div>
+                            </div>
+                        </div>
+                        <div class="content__description">
+                            <p>In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.</p>
+                        </div>
+                        <div class="content__buy flex flex--ai-fe">
+                            <div class="content__price">
+                                <div class="content__sell">20% off</div>
+                                <div class="content__title content__title--bold content__title--nm">$59.96</div>
+                            </div>
+                            <button class="btn">buy it now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+    <svg style="display: none;">
+        <symbol id="tooltip">
+            <path id="tooltip.svg" class="cls-1" d="M362.4,197h-3.62l-3.79,3.79h0a1.4,1.4,0,0,1-1.98,0h0L349.22,197H345.6a2.8,2.8,0,0,1-2.8-2.8V181.6a2.8,2.8,0,0,1,2.8-2.8h16.8a2.8,2.8,0,0,1,2.8,2.8v12.6A2.8,2.8,0,0,1,362.4,197Zm0-14a1.4,1.4,0,0,0-1.4-1.4H347a1.4,1.4,0,0,0-1.4,1.4v9.8a1.4,1.4,0,0,0,1.4,1.4h2.8a1.4,1.4,0,0,1,.99.41h0l3.21,3.209,3.21-3.209h0a1.392,1.392,0,0,1,.99-0.41H361a1.4,1.4,0,0,0,1.4-1.4V183Zm-4.2,8.4h-8.4a1.4,1.4,0,0,1,0-2.8h8.4A1.4,1.4,0,1,1,358.2,191.4Zm0-4.2h-8.4a1.4,1.4,0,0,1,0-2.8h8.4A1.4,1.4,0,1,1,358.2,187.2Z" transform="translate(-342.813 -178.813)"/>
+        </symbol>
+        <symbol id="card">
+            <path id="card.svg" class="cls-1" d="M543.993,190.308a4.8,4.8,0,0,1-4.747,4.849,4.657,4.657,0,0,1-3.774-1.957l-0.023.017-0.949-1.293-0.95,1.293-0.013-.01a4.693,4.693,0,0,1-3.784,1.95,4.8,4.8,0,0,1-4.746-4.849,4.876,4.876,0,0,1,.962-2.9l-0.013-.01s6.962-8.406,8.544-8.406,8.543,8.406,8.543,8.406l-0.013.01A4.876,4.876,0,0,1,543.993,190.308Zm-11.075,6.465v-1.616a1.582,1.582,0,1,1,3.164,0v1.616a1.617,1.617,0,0,1,0,3.234h-3.164A1.617,1.617,0,0,1,532.918,196.773Z" transform="translate(-525 -179)"/>
+        </symbol>
+        <symbol id="basket">
+            <path id="basket.svg" class="cls-1" d="M722.946,186.765l0.024,0.006-2.5,11.25-0.024-.006a1.231,1.231,0,0,1-1.2.984h-12.5a1.231,1.231,0,0,1-1.2-.984l-0.024.006-2.5-11.25,0.024-.006A1.176,1.176,0,0,1,703,186.5a1.25,1.25,0,0,1,1.25-1.25h2.5a6.25,6.25,0,1,1,12.5,0h2.5A1.25,1.25,0,0,1,723,186.5,1.176,1.176,0,0,1,722.946,186.765ZM713,181.5a3.75,3.75,0,0,0-3.75,3.751h7.5A3.75,3.75,0,0,0,713,181.5Zm5,8.751A1.251,1.251,0,0,1,716.75,189V187.75h-7.5V189a1.25,1.25,0,1,1-2.5,0V187.75h-0.942l1.945,8.749h10.494l1.945-8.749H719.25V189A1.251,1.251,0,0,1,718,190.25Z" transform="translate(-703 -179)"/>
+
+        </symbol> 
+    </svg>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bdc3c7;
+        fill-rule: evenodd;
+        opacity: 0.7;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="703" y="179" width="20" height="20" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#b7bacd"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="basket.svg" class="cls-1" d="M722.946,186.765l0.024,0.006-2.5,11.25-0.024-.006a1.231,1.231,0,0,1-1.2.984h-12.5a1.231,1.231,0,0,1-1.2-.984l-0.024.006-2.5-11.25,0.024-.006A1.176,1.176,0,0,1,703,186.5a1.25,1.25,0,0,1,1.25-1.25h2.5a6.25,6.25,0,1,1,12.5,0h2.5A1.25,1.25,0,0,1,723,186.5,1.176,1.176,0,0,1,722.946,186.765ZM713,181.5a3.75,3.75,0,0,0-3.75,3.751h7.5A3.75,3.75,0,0,0,713,181.5Zm5,8.751A1.251,1.251,0,0,1,716.75,189V187.75h-7.5V189a1.25,1.25,0,1,1-2.5,0V187.75h-0.942l1.945,8.749h10.494l1.945-8.749H719.25V189A1.251,1.251,0,0,1,718,190.25Z" transform="translate(-703 -179)"/>
+</svg>

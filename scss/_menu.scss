@@ -1,0 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;  
+    z-index: 1;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    transform: scale(.8);
+    @include hover {
+        transform: scale(.9);
+    }
+}
+
+.menu {
+    list-style: none;
+    &__item {
+        display: inline-block;
+        margin-left: 40px;
+        & + &:before {
+            content: '';
+            height: 20px;
+            border-left: 1px solid fade-out($text-color, .5);
+            transform: rotate(15deg) translate(0, 3px);
+            position: absolute;
+        }
+    }
+    &__link {
+        padding: 10px 20px 10px 60px;
+        color: $text-color;
+        font-weight: 700;
+        text-decoration: none;
+        @include hover {
+            color: $primary-color;
+        }
+    }
+}
